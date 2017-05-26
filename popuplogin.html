@@ -1,0 +1,16 @@
+<form name="loginform" id="loginform" method="post" action="?action=login" style="text-align:left; background:inherit; margin:0; border:0;">
+<div class="auth" style="border:0;background:#fff url('images/loginbg.gif') top right no-repeat;width:300px;height:160px;margin:0">
+
+<div style="padding: 15px 0 0 3px;"> 
+	<input type="hidden" name="sourcepage" value="" />
+	Username:<br/><input style="margin:0 0 5px 0;" class="activeField" name="username" size="35" value=""/><br/>
+	Password:<br/><input style="margin:0 0 5px 0;" class="activeField" name="password" type="password" size="35" value=""/><br/>
+	<input class="button" type="submit" name="login" value="Sign in"/>
+	<input class="button" type="button" name="submit" value="Cancel" onclick="TINY.box.hide();"/>
+	<br/><span style="font: 80% tahoma, verdana, sans-serif">Not registered? Click <a style="color:#0000FF" href="?action=register" onclick="javascript:TINY.box.hide(); return true;">here</a>.</span>
+</div>
+<div id="invalidpassword">
+	<?=$error?>
+</div>
+</div>
+</form>	

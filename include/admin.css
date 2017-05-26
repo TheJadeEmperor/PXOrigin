@@ -1,0 +1,138 @@
+body, container {	
+	color: #8467D7;
+	background-image: url('sky.jpg');
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: small;
+	font-weight: 100;
+	text-align: center;
+	margin: 0px;
+}
+ 
+a {
+	color: #AF89E8;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #AF89E8;
+	text-decoration: none;
+}
+
+a:hover  { 
+	color: #AF89E8; 
+	background-color: transparent;
+	text-decoration: underline;	
+}
+
+fieldset a, fieldset legend {
+	color: #AF89E8;
+}
+
+.moduleBlue th, .moduleBlue h1
+{
+	margin: 0px;
+	font-size: 90%;
+	text-align: center;
+	padding: 5px; 
+	background: #531D2A;
+}
+
+.moduleBlue td
+{
+	padding: 6px 10px 6px 10px;
+}
+
+.moduleBlue {
+	border: 1px solid #AF89E8; 
+}
+
+.moduleBlue div {
+	padding: 10px; 
+}
+
+.moduleBlue a { 
+	color: blue;
+}
+
+.activeField {
+	background: #FFFFFF;
+}
+
+.activeField:hover  {
+	background: #FFFF99;
+}
+
+ul#menu, ul#menu ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#menu li a 
+{
+  	background: #666;
+	color: #fff;
+	display: block;
+	font-size: 90%;
+	line-height: default;
+	padding-left: 5px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	text-decoration: none;
+	text-align: left;
+	font-weight:600;
+	text-transform: uppercase;
+}
+
+ul#menu li 
+{
+	border: 1px solid #000E2E; 
+	border-bottom: none;
+}
+
+ul#menu li a 
+{
+  	background: #333; 
+  	color: #fff; 
+}
+
+ul#menu li a:hover 
+{
+	background: #000;
+}
+
+ul#menu li ul li 
+{
+	 border: none; 
+	 color: #999;
+	 margin: 0;
+}
+
+ul#menu li ul li a 
+{
+	background: #ccc;
+	color: #000;
+	margin: 0;
+	text-transform: none;
+}
+
+ul#menu li ul li a:hover 
+{
+	background: #aaa;
+	color: #000;
+}
+
+.adminMenu h2
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 90%;
+	text-align: center;
+	display: block;
+	padding: 0.5em 0;
+	background: #531D2A;
+}

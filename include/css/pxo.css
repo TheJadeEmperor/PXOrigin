@@ -1,0 +1,624 @@
+@charset "utf-8";
+* {
+	margin: 0; 
+	padding: 0; 
+}
+
+body {
+	overflow-x: hidden;
+	margin:0; 
+	text-align: center;
+	height: 100%;
+	padding: 0px 0px 0px 0px;
+	font-family: verdana, arial;
+	font-size: 13px;
+	line-height:1.4;
+	color:#000000;
+	background: #000; 
+    background-image: url(../../images/pxoLeft.jpg), url(../../images/pxoRight.jpg);
+    background-repeat: no-repeat;
+    background-position: left 178px, right 178px;
+    background-attachment: fixed; 
+}
+
+.topBar {
+    top: 0;
+    width: 100%; 
+    margin: 0px auto;
+    background-color: #333333;
+    height: 180px;
+    text-align:center;
+}
+
+.topContainer {
+    margin-left:auto;
+    margin-right:auto; 
+    width:920px; 
+}
+
+.topMenu { 
+    background-color:#333333;
+    display: block;
+    list-style: none;
+    margin: 0px; 
+    float: left;
+    font-size: 12px; 
+    font-face: verdana;
+} 
+
+.topMenu li { 
+    display: block;
+    float: left; 
+    margin: 0px; 
+    padding: 9px 18px; 
+}
+
+.topMenu li:hover { 
+    background-color: #00B3E5;
+}
+
+.topMenu li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#wrapper {
+	text-align:center;
+	margin: 0px 20px; 
+	margin-left:auto;
+	margin-right:auto; 
+	display:block;
+	width:990px; 
+}
+
+#container {
+	padding:20px;
+	color: #000;
+	background:#efefef;
+	box-shadow:0 0 25px #000;
+	-moz-box-shadow:0 0 25px #fff;
+	-webkit-box-shadow:0 0 25px #fff;
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px; 
+	border: 1px solid #fff; 
+}
+
+.mainContent {
+	margin: 0 0 0 17px; 
+	text-align: center;
+}
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.dropdown {
+	display: block;
+	list-style: none;
+	position: relative;
+	float: left; 
+	background-color:#333333;
+	margin: 0 auto;
+	font-size: 14px;
+	width: 922px;
+}
+
+ul.dropdown li {
+	float: left;
+	line-height: 1.3em;
+	vertical-align: middle;
+	zoom: 1;
+	display: block;
+	float: left; 
+	margin: 0px; 
+	padding: 10px 20px; 
+}
+
+ul.dropdown li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px; 
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+	position: relative;
+	z-index: 599;
+	cursor: default;
+	background-color: #00B3E5;
+}
+
+ul.dropdown ul {
+	left: 0;
+    top: 100%;
+	visibility: hidden;
+	position: absolute;
+	z-index: 598;
+	color: white; 
+	background-color:#333333;
+	width: 200%; 
+	text-align: left;
+}
+
+ul.dropdown ul li {
+	float: none;	
+}
+
+ul.dropdown ul li a {
+	width: 100%;
+}
+
+ul.dropdown li:hover > ul {
+	visibility: visible;
+}
+
+.moduleBlue {
+	border: 1px solid gray;
+}
+
+
+.itemGlow:hover {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: linear;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #333;
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    color: white;
+    cursor: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: none;
+    outline-color: white;
+    outline-style: none;
+    outline-width: 0px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: #9CF -1px 1px 8px, #9CF 1px -1px 8px;
+    visibility: visible;
+}
+
+p {
+	margin: 5px 0px;
+}
+
+h3 {
+	font-size: 18px; 
+}
+
+.footer {
+	text-align: center; }
+	
+a:hover {
+	color: gray;
+}
+
+ul li {
+	margin: 5px 0px 5px 20px; 
+	text-align: left; 
+}
+
+.activeField {
+	border: 1px solid #000000;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+	height: 20px;
+}
+
+.activeField:hover {
+	border: 1px solid #000;
+	background: #FFFF99;
+}
+
+.moduleBlue h1 {
+	margin: 0; 
+	font-size: 90%;
+	text-align: center;
+	display: block;
+	padding: 0.5em 0;
+	background: #12649b;
+	color: #ffffff;
+}
+
+.moduleBlue div {
+	font-size: 14px; 
+	padding: 5px 10px;
+}
+
+.register td {
+	padding: 5px; 
+}
+
+.postTitle {
+	text-decoration: none; 
+	color: black;
+}
+
+.postTitle:hover {
+	color: gray;
+}
+
+.separator {
+	border-bottom: 1px dotted #CDCDCD; 
+	margin: 10px 5px;
+}
+
+.activeField {
+    height: 25px; }
+
+/* Hoverbox Code */
+.hoverbox {
+	cursor: default;
+	list-style: none;
+}
+
+.hoverbox a .preview, .hoverbox a .tall {
+	display: none;
+}
+
+.hoverbox a:hover .preview {
+	display: block;
+	position: absolute;
+	top: -33px;
+	left: -45px;
+	z-index: 1;
+}
+
+.hoverbox a:hover .tall {
+	display: block;
+	position: absolute;
+	top: -50px;
+	left: -10px;
+	z-index: 1;
+}
+
+.hoverbox li {
+	background: #eee;
+	border-color: #ddd #bbb #aaa #ccc;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
+
+.hoverbox img {
+	background: #fff;
+	border-color: #aaa #ccc #ddd #bbb;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	padding: 2px;
+	vertical-align: top;
+	width: 100px;
+	height: 75px;
+}
+
+.hoverbox .preview {
+	border-color: #FFF;
+	width: 200px;
+	height: 150px;
+	cursor: crosshair;
+}
+
+.hoverbox .tall {
+	border-color: #FFF;
+	width: 150px;
+	height: 200px;
+	cursor: crosshair;
+}
+
+/* featured posts */
+.featured {
+	margin: 0 0 0 0px;
+	width: 922px;
+}
+
+.featuredPost {
+	width: 225px; 
+	height: 140px;
+	border: 1px solid black;
+}
+
+.featuredPost .title {
+	background: url("../../images/trans.png");
+    text-shadow: 1px 1px 1px #000000;
+	color: #FFF;
+	font-size: 13px;
+	z-index: 100;
+	height: 35px; 
+    width: 100%; 
+}
+
+.featuredPost .count {
+	float: right; 
+	width: 20px; 
+	padding: 5px; 
+	background-color: #FFF;
+}
+
+.featured a {
+	text-decoration: none; 
+}
+
+.featured a:hover {
+	text-decoration: underline; 
+}
+/* featured posts */
+
+.pagination {
+    float: right; 
+    height: 36px;
+    margin: 0;
+}
+.pagination ul {
+    float: left;
+    margin: 0;
+    border: 1px solid #ddd;
+   -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+}
+
+.pagination li {
+    display:inline;
+}
+
+.pagination .next a {
+    background-color: #ececec;
+}
+
+.pagination a {
+    float: left;
+    padding: 0 18px;
+    line-height: 34px;
+    border-right: 1px solid;
+    border-right-color: #ddd;
+    border-right-color: rgba(0, 0, 0, 0.15); 
+    text-decoration: none;
+}
+
+.pagination a:hover, .pagination .active a {
+    background-color: #c7eefe;
+}
+
+.footerPop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    text-align: right;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+/* =================== Start Footer CSS ====================================================== */
+		.clear {
+			clear: both;
+			height: 0px;
+			line-height: 0px;
+			font-size: 0px;
+		}
+
+		#gb-footer {
+			bottom: 0;
+			display: block;
+			margin: 0px auto;
+			width: 100%;
+			background: url(../../images/footer-bg.gif) repeat-x;
+		}
+		#gb-footer-in {
+			margin: 0px auto;
+			width: 1020px;
+			display: block;
+			padding: 10px 0px 20px 0px;
+			background: url(../../images/footer-in.png);
+			border-bottom: 1px solid #151515;
+		}
+		h5 {
+			display: block;
+			padding-bottom: 10px;
+			font: bold 12px tahoma;
+			color: #99c200;
+			text-transform: uppercase;
+		}
+		.gb-footer-box1 {
+			display: block;
+			width: 160px;
+			float: left;
+			padding: 10px 10px 0px 20px;
+		}
+		.gb-footer-box {
+			display: block;
+			width: 180px;
+			float: left;
+			padding: 20px 0px 0px 10px;
+		}
+		.gb-footer-box3 span {
+			display: block;
+			font: 11px tahoma;
+			color: #fff;
+			padding-top: 10px;
+		}
+		.gb-footer-box2 {
+			display: block;
+			width: 150px;
+			float: left;
+			padding: 20px 0px 0px 0px;
+		}
+		.gb-footer-box3 {
+			display: block;
+			width: 230px;
+			float: right;
+			padding: 20px 15px 0px 0px;
+		}
+		.gb-footer-list {
+			list-style: none;
+			display: block;
+		}
+		.gb-footer-list li {
+			display: block;
+		}
+		.gb-footer-list li a {
+			display: block;
+			font: 12px/12px Arial, Helvetica, sans-serif;
+			height: 15px;
+			padding: 8px 0px 0px 0px;
+			text-decoration: none;
+			color: #747474;
+		}
+		.gb-footer-list li a:hover {
+			padding: 8px 0px 0px 3px;
+			color: #99c200;
+		}
+		.gb-footer-list li.facebook a {
+			display: block;
+			background: url(../../images/img.gif) 0px -271px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 23px;
+		}
+		.gb-footer-list li.twitter a {
+			display: block;
+			background: url(../../images/img.gif) 0px -296px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 23px;
+		}
+		.gb-footer-list li.tumblr a {
+			display: block;
+			background: url(../../images/img.gif) 0px -322px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 23px;
+		}
+		.gb-footer-list li.youtube a {
+			display: block;
+			background: url(../../images/img.gif) 0px -347px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 23px;
+		}
+		.gb-footer-list li.googleplus a {
+			display: block;
+			background: url(../../images/img.gif) 0px -371px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 23px;
+		}
+		.gb-footer-list li.facebook a:hover {
+			background: url(../../images/img.gif) 3px -271px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 26px;
+		}
+		.gb-footer-list li.twitter a:hover {
+			background: url(../../images/img.gif) 3px -296px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 26px;
+		}
+		.gb-footer-list li.tumblr a:hover {
+			background: url(../../images/img.gif) 3px -322px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 26px;
+		}
+		.gb-footer-list li.youtube a:hover {
+			background: url(../../images/img.gif) 3px -347px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 26px;
+		}
+		.gb-footer-list li.googleplus a:hover {
+			background: url(../../images/img.gif) 3px -371px no-repeat;
+			height: 18px;
+			padding: 8px 0px 0px 26px;
+		}
+		.gb-input {
+			font: 11px tahoma;
+			color: #FFFFFF;
+			background: #000;
+			padding: 8px 5px;
+			width: 215px;
+			border-radius: 7px;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border: none;
+			margin: 0px;
+			float: left;
+			margin-right: 4px;
+			margin: 0px 0px 10px 0px;
+			-moz-box-shadow: 2px 2px 2px #303030;
+			-webkit-box-shadow: 2px 2px 2px #303030;
+			box-shadow: 2px 2px 2px #303030;
+		}
+		.gb-button {
+			background: url(../../images/img.gif) 0px -415px no-repeat;
+			border: none;
+			font: bold 11px tahoma;
+			color: #ffb803;
+			cursor: pointer;
+			padding: 5px 0px 5px 30px;
+			float: right;
+			width: 80px;
+			margin: 0px 5px 0px 0px;
+		}
+		.gb-button:hover {
+			background: url(../../images/img.gif) 2px -415px no-repeat;
+			color: #ffffff;
+		}
+		#pxoFooterCopyright {
+			display: block;
+			width: 980px;
+			border-top: 1px solid #303030;
+			margin: 0px auto;
+			padding: 20px 0px 20px 0px;
+			color: #626162;
+		}
+		#pxoFooterCopyright span {
+			float: left;
+			padding: 0px;
+			display: block;
+			font: 11px tahoma, Arial, Helvetica, sans-serif;
+		}
+		#pxoFooterCopyright .rss {
+			background: url(../../images/img.gif) 0px -442px no-repeat;
+			float: right;
+			padding: 0px 0px 5px 25px;
+		}
+		#pxoFooterCopyright .rss:hover {
+			background: url(../../images/img.gif) 2px -442px no-repeat;
+		}
+		#pxoFooterCopyright strong {
+			color: #99c200;
+			font-weight: normal;
+		}
+		#gb-footer span strong a {
+			color: #99c200;
+			font-weight: normal;
+			font: 11px tahoma, Arial, Helvetica, sans-serif;
+			text-decoration: none;
+		}
+		#gb-footer a:hover {
+			color: #99c200;
+			text-decoration: underline; 
+		}
+
+#eXTReMe {
+    display: none; }

@@ -1,0 +1,67 @@
+<?php
+if($_POST)
+{
+	$error = preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $_POST['email']) ? '' : 'INVALID EMAIL ADDRESS';
+	 
+	$values = array ('name','email','message');
+	$required = array('name','email','message');
+	foreach($values as $key => $value)
+	{
+		if(in_array($value, $required))
+		{
+			if( empty($_POST[$value]) )  { 
+				$error .= '<br>PLEASE FILL IN THE REQUIRED FIELD: '.$value; 
+			}
+		}
+	}
+	
+	if(!$error)
+	{
+		$headers = "From: ".$adminEmail."\n";
+		$headers .= "Content-type: text/html;";
+		$emailSubject = $businessName.": We received your message ";
+		$emailContent = "<p>You have successfully sent a message to ".$businessName." The contents
+		of the message are the following:</p> 
+		
+		<p>Name: ".$_POST[name]."<br>
+		Company: ".$_POST[email]."<br>
+		Message: ".$_POST[message]."</p>";
+		 
+		if(@mail($adminEmail, $emailSubject, $emailContent, $headers)) {
+			$error = 'Message sent! You will receive a confirmation email shortly.'; 
+		} else {
+			$error = 'Error: message not sent! Please inform the administrator: '.$adminEmail;
+		}
+	}
+	
+	$error = '<font color=red>'.$error.'</font>';
+}
+?>
+ 
+<?=$error?>
+<p>&nbsp;</p>
+<h1>Leave Us a Message</h1>
+
+<p>Have any questions, comments, or concerns? Email us at pxorigin@gmail.com or send us a message and 
+we will respond to you at our earliest convenience: </p>
+<p>&nbsp;</p>
+
+<form method="post" id="contactform">
+<table cellspacing=5>
+<tr valign=top>
+	<td width="100px">Full Name <br><br> </td>
+	<td><input id="name" name="name" class="text" value="<?=$_POST[name]?>" size=40></td>
+</tr><tr valign=top>
+	<td>Email <br><br></td>
+	<td><input id="email" name="email" class="text" value="<?=$_POST[email]?>" size=40></td>
+</tr><tr>
+	<td>
+	  <label for="message">Message</label></td><td>
+		  <textarea id="message" name="message" rows="6" cols="50"><?=$_POST[message]?></textarea>
+	</td>
+</tr><tr>
+	<td colspan=2 align=center> <input type=image src="images/send.gif">  </td>
+</tr>
+</table> 
+</form>
+</div>
